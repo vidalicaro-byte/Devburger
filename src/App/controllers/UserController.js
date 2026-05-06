@@ -24,7 +24,7 @@ class UserController {
 
     if (existingUser) {
       return response
-        .status(400)
+        .status(409)
         .json({ message: "Este e-mail já está cadastrado!" });
     }
 
